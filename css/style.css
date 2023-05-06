@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap");
+
+
+body {
+    margin: 0px;
+    background-color: white;
+    font-family: 'PT Sans Narrow',sans-serif;
+}
+
+.botones {
+  font-size: 1rem;
+  font-family: oswald, sans-serif;
+  width: 70%;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  align-self: center;
+  color: black;
+  background-color: #E5E5E5;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #D6D6D6;
+}
+
+.botones:hover {
+  background: rgb(232, 121, 8);
+  color: #fff !important;
+}
+
+
+.barraSuperior {
+  background-color: #FFFFFF;
+  text-align: center;
+  line-height: 0;
+}
+
+.barraSuperior img {
+  max-width: 100%;
+  height: auto;
+}
+
+#barranav {
+  background-color: rgb(232, 121, 8);
+}
+
+#barranav ul li a {
+  font-family: "Rowdies", cursive;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+#barranav ul li a:hover {
+  color: rgb(100, 97, 97);
+}
+
+.div-cuadros {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.div-cuadros .boxes {
+  width: 30vh;
+  margin: 10px;
+  background-color: transparent;
+  border-radius: 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(232, 121, 8);
+}
+
+.div-cuadros .boxes:hover{
+  transform: scale(1.1, 1.1);
+}
+
+.div-cuadros .boxes h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.div-cuadros .boxes h2 i {
+  padding: 13px;
+}
+
+.div-cuadros .boxes p {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.carrusel-index {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.carrusel-index .carousel-item img {
+  width: 60em;
+}
+
+#container-general {
+  display: flex;
+  flex-direction: column;
+}
+    
+#container-general #ordenar-modal {
+  display: flex;
+  justify-content: space-around;
+}
+
+#container-general #ordenar-modal #seleccion {
+  width: 20%;
+  margin: 20px 0px 30px 80px;
+}
+
+#container-general #ordenar-modal .modal-carrito {
+  width: 15%;
+  align-self: center;
+}
+
+  #container-general #ordenar-modal .modal-carrito i {
+  font-size: 1.2rem;
+}
+     
+#container-general #ordenar-modal .table {
+  text-align: center;
+}
+
+#container-general #ordenar-modal #gastoTotal {
+  font-size: 1.2rem;
+}
+
+#container-general #ordenar-modal .modal-footer a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+#container-general #section-productos {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#container-general #section-productos .card-product {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+#container-general #section-productos .card-product .img-container {
+  position: relative;
+}
+
+#container-general #section-productos .card-product .img-container img {
+  width: 20em;
+  height: 50%;
+  margin: 30px;
+}
+
+#container-general #section-productos .card-product .info-producto {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* INICIO DE FOOTER */
+footer {
+  background-color: #444444;
+  color: #f5f5f5;
+  margin-top: 60px;
+  padding: 20px;
+  bottom: 0px;
+  font-size: 16px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer .footer-content {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-content .footer-info li {
+  list-style-type: none;
+}
+
+footer .footer-content .footer-info li:first-of-type {
+  margin-bottom: 1px;
+}
+    
+footer .footer-content .footer-redes {
+  display: flex;
+}
+
+footer .footer-content .footer-redes li {
+  list-style-type: none;
+}
+
+footer .footer-content .footer-redes li:first-of-type {
+  margin-right: 20px;
+}
+
+footer .footer-content .footer-redes li i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+footer a {
+  color:#FFFFFF;
+}
+
+footer a:hover{
+  color:rgb(232, 121, 8);
+}
+/* FIN DE FOOTER */
+
+/* ---------------------------------------------------------------------------------------- */
+  
+/* INICIO DE CARRITO */
+.section-carrito {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+  .section-carrito .form-carrito {
+    width: 60%; }
+    .section-carrito .form-carrito form h2 {
+      font-size: 1.2rem; }
+    .section-carrito .form-carrito form .botones {
+      width: 100%;
+      background-color: #E5E5E5;
+      border-radius: 10px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #D6D6D6; } 
+      .section-carrito .form-carrito form .botones:hover {
+        background: rgb(232, 121, 8);
+        color: #fff !important }
+    .section-carrito .form-carrito form .error {
+      color: rgb(232, 121, 8);
+      display: none; }
+    .section-carrito .form-carrito form .pago-tarjeta {
+      display: none; }
+  .section-carrito .resumen-carrito {
+    width: 60%;
+    margin-bottom: 50px; }
+    .section-carrito .resumen-carrito table {
+      background-color: rgba(158, 158, 158, 0.137);
+      color: #000100;
+      text-align: center;
+      border-collapse: collapse; }
+      .section-carrito .resumen-carrito table tr td {
+        font-size: 1.2rem;
+        padding: 15px; }
+/* FINAL DEL CARRITO */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* INICIO DE CONTACTO */
+
+.section-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.section-contacto .div-contacto {
+  display: grid;
+}
+
+.section-contacto .div-contacto div {
+  background-color: rgba(158, 158, 158, 0.137);
+  padding: 30px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.section-contacto .div-contacto div p {
+  padding: 10px;
+}
+  
+.section-contacto .div-contacto div p i {
+  margin-right: 25px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.section-contacto .form-contacto section {
+  background-color: rgb(250, 229, 208);
+  padding: 40px;
+  margin-top: 15PX;;
+  border-radius: 10px;
+  width: 90vh;
+}
+
+.section-contacto .form-contacto section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-contacto .form-contacto section form .error {
+  display: none;
+  color: rgb(232, 121, 8);
+  font-size: 1rem;
+}
+
+.section-contacto .form-contacto section form h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.section-contacto .form-contacto section form label, .section-contacto .form-contacto section form div {
+  margin: 5px 0px 5px 0px;
+  font-size: 1.1rem;
+}
+
+.section-contacto .form-contacto section form form input, .section-contacto .form-contacto section form form textarea {
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid #000100;
+  resize: none;
+}
+
+.section-contacto .form-contacto section form form input:focus, .section-contacto .form-contacto section form form textarea:focus {
+  outline: none;
+}
+
+.section-contacto .form-contacto section form .botones {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #D6D6D6;
+}
+
+.section-contacto .form-contacto section form .botones:hover {
+  color: #d7c1d7d5;
+  background: rgb(232, 121, 8);
+  color: #fff !important
+}
+
+/* FIN DE CONTACTO */
+

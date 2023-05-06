@@ -1,0 +1,64 @@
+[{
+    "id": 1,
+    "tipo": "Bicicleta",
+    "nombre": "Raleigh Mojave 4.5 R29",
+    "precio": 65000,
+    "foto": "../media/products/product-1.jpg"
+}, {
+    "id": 2,
+    "tipo": "Bicicleta",
+    "nombre": "Raleigh Mojave 5.5 R29",
+    "precio": 70000,
+    "foto": "../media/products/product-2.jpg"
+}, {
+    "id": 3,
+    "tipo": "Bicicleta",
+    "nombre": "Vairo XR 5.0 R29",
+    "precio": 68000,
+    "foto": "../media/products/product-3.jpg"
+}, {
+    "id": 4,
+    "tipo": "Bicicleta",
+    "nombre": "Venzo Loki R29",
+    "precio": 70000,
+    "foto": "../media/products/product-4.jpg"
+}, {
+    "id": 5,
+    "tipo": "Bicicleta",
+    "nombre": "Venzo Primal R29",
+    "precio": 85000,
+    "foto": "../media/products/product-5.jpg"
+}, {
+    "id": 6,
+    "tipo": "Bicicleta",
+    "nombre": "Venzo Raptor R29",
+    "precio": 80000,
+    "foto": "../media/products/product-6.png"
+}, {
+    "id": 7,
+    "tipo": "Bicicleta",
+    "nombre": "Zenith Calea R29 Elite",
+    "precio": 140000,
+    "foto": "../media/products/product-7.jpg"
+}, {
+    "id": 8,
+    "tipo": "Bicicleta",
+    "nombre": "Zenith Riva R29 Comp",
+    "precio": 100000,
+    "foto": "../media/products/product-8.jpg"
+},
+{
+    "id": 9,
+    "tipo": "Bicicleta",
+    "nombre": "Zenith Andes R29",
+    "precio": 120000,
+    "foto": "../media/products/product-9.jpeg"
+},
+{
+    "id": 10,
+    "tipo": "Bicicleta",
+    "nombre": "GT Karakoram R29",
+    "precio": 135000,
+    "foto": "../media/products/product-10.jpeg"
+}
+]

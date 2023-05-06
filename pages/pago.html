@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    
+    <script src="https://kit.fontawesome.com/367779f1f9.js" crossorigin="anonymous"></script>
+
+    <title>Inicio | Bike Store</title>
+</head>
+
+
+<body>
+    <div class="barraSuperior">
+      <a href="../index.html">
+          <img src="../images/logo.svg" alt="Logo de Bike Store">
+      </a>
+    </div>
+
+    <!-- Menú nav -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="barranav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin nav -->
+
+
+
+    <section class="section-carrito animate__animated animate__fadeIn">
+        <div class="form-carrito">
+            <form class="row g-3" id="form-carrito">
+                <h2>Datos de contacto</h2>
+                <div class="col-12">
+                    <input type="text" class="form-control entrada-pago" placeholder="Nombre" id="nombre" />
+                    <div id="error-nombre" class="error">Ingresa un nombre valido</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <input type="email" class="form-control entrada-pago" placeholder="Email" id="email" />
+                    <div id="error-email" class="error">Ingresa un email valido</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <input type="numbers" class="form-control entrada-pago" placeholder="Telefono" id="telefono">
+                    <div id="error-tel" class="error">Ingresa un telefono valido</div>
+                </div>
+                <h2>Entrega</h2>
+                <div class="col-12">
+                    <input type="text" class="form-control entrada-pago" placeholder="Dirección" id="direccion" />
+                    <div id="error-direccion" class="error">Ingresa una dirección valida</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <input type="number" class="form-control entrada-pago" placeholder="Código postal"
+                        id="cod-postal" />
+                    <div id="error-codigopostal" class="error">Ingresa un codigo postal valido</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <input type="text" class="form-control entrada-pago" placeholder="Provincia" id="provincia" />
+                    <div id="error-provincia" class="error">Ingresa una provincia valida</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <input type="text" class="form-control entrada-pago" placeholder="Localidad" id="localidad" />
+                    <div id="error-localidad" class="error">Ingresa una localidad valida</div>
+                </div>
+                <div>
+                    <select class="form-select" id="metodo-envio" aria-label="Default select example">
+                        <option value="defecto">Método de Envío</option>
+                        <option value="caba">Envío a domicilio CABA</option>
+                        <option value="gba">Envío a domicilio GBA</option>
+                        <option value="interior">Envío a domicilio resto del pais</option>
+                        <option value="retiro">Retirar por nuestro local (sin costo)</option>
+                    </select>
+                    <div id="error-envio" class="error">Ingresa un metodo de envio</div>
+                </div>
+                <h2>Pago</h2>
+                <div>
+                    <select name="pago" class="form-select" id="metodo-pago">
+                        <option value="defecto">Método de pago</option>
+                        <option value="debito" id="debito">Tarjeta de debito</option>
+                        <option value="credito" id="credito">Tarjeta de credito</option>
+                        <option value="efectivo" id="efectivo">Efectivo</option>
+                    </select>
+                    <div id="error-pago" class="error">Ingresa un metodo de pago</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <input type="number" class="form-control pago-tarjeta entrada-pago" placeholder="Número tarjeta"
+                        id="num-tarjeta" />
+                    <div id="error-numtarj" class="error">Ingresa un numero valido</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <input type="number" class="form-control pago-tarjeta entrada-pago"
+                        placeholder="Codigo de seguridad" id="cod-seguridad" />
+                    <div id="error-codseg" class="error">Ingrese un codigo valido</div>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn botones" id="btn-finalizar">Finalizar compra</button>
+                </div>
+            </form>
+        </div>
+        <div class="resumen-carrito">
+            <table class="table">
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="subtotal"></td>
+                </tr>
+                <tr>
+                    <td>Envío</td>
+                    <td id="envio"></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+
+
+        <footer>
+            <div class="container footer-content">
+            <ul class="footer-info">
+                <a href="/index.html">Inicio</a>
+                <br>
+                <a href="/pages/productos.html">Productos</a>
+                <br>
+                <a href="/pages/contacto.html">Contacto</a>
+            </ul>
+        
+            <p>© Bike Store 2023 <br>
+                Todos los derechos reservados
+            </p>
+            <p>Av.Corrientes 5240, Local 7 <br>
+                (011) 15-1122-3344 <br>
+                Lunes a sábados de 10 a 20 hs
+            </p>
+            
+            <ul class="footer-redes">
+                <li><i class="fab fa-whatsapp"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+            </div>
+        </footer>
+
+    
+    
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Mi script-->
+    <script src="../js/carrito.js"></script>
+    <script src="../js/pago.js"></script>
+    
+    </body>
+    </html>
+    
+     
